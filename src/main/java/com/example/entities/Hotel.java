@@ -25,7 +25,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "hoteles")
+@Table(name = "hotel")
 
 public class Hotel implements Serializable{
 

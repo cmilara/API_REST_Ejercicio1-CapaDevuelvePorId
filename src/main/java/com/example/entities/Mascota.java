@@ -25,7 +25,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "mascotas")
+@Table(name = "mascota")
 public class Mascota {
 
     @Id
@@ -33,10 +33,13 @@ public class Mascota {
     private long id;
 
     private String nombre;
+
     @Enumerated(EnumType.STRING)
     private Raza raza;
+
     @Enumerated(EnumType.STRING)
     private Genero genero;
+
     private LocalDate fechaNacimiento;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
